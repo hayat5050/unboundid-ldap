@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  unboundidLdap:
+    image: unboundid-ldap:latest
+    hostname: unboundid-ldap
+    volumes:
+      - ./conf:/opt/unboundid-ldap/conf
+    ports:
+      - "1389:389"

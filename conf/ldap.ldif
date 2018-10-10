@@ -1,0 +1,96 @@
+dn: dc=netplus,dc=local
+objectClass: organization
+objectClass: dcObject
+objectClass: top
+dc: netplus
+o: NetPlus
+
+dn: ou=people,dc=netplus,dc=local
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=netplus,dc=local
+objectClass: organizationalUnit
+ou: groups
+
+dn: cn=admin,ou=groups,dc=netplus,dc=local
+objectClass: extensibleObject
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: admin
+uniqueMember: uid=admin,ou=people,dc=netplus,dc=local
+
+dn: cn=analyst,ou=groups,dc=netplus,dc=local
+objectClass: groupOfUniqueNames
+objectClass: extensibleObject
+objectClass: top
+cn: analyst
+uniqueMember: uid=admin,ou=people,dc=netplus,dc=local
+uniqueMember: uid=wilai.t,ou=people,dc=netplus,dc=local
+
+dn: cn=director,ou=groups,dc=netplus,dc=local
+objectClass: groupOfUniqueNames
+objectClass: top
+objectClass: extensibleObject
+cn: director
+uniqueMember: uid=admin,ou=people,dc=netplus,dc=local
+
+dn: cn=engineer,ou=groups,dc=netplus,dc=local
+objectClass: groupOfUniqueNames
+objectClass: extensibleObject
+objectClass: top
+cn: engineer
+uniqueMember: uid=admin,ou=people,dc=row,dc=local
+uniqueMember: uid=wilai.t,ou=people,dc=row,dc=local
+
+dn: cn=officer,ou=groups,dc=netplus,dc=local
+objectClass: groupOfUniqueNames
+objectClass: extensibleObject
+objectClass: top
+cn: officer
+uniqueMember: uid=admin,ou=people,dc=netplus,dc=local
+uniqueMember: uid=narathit,ou=people,dc=netplus,dc=local
+uniqueMember: uid=wilai.t,ou=people,dc=netplus,dc=local
+
+dn: cn=reporter,ou=groups,dc=netplus,dc=local
+objectClass: groupOfUniqueNames
+objectClass: extensibleObject
+objectClass: top
+cn: reporter
+uniqueMember: uid=admin,ou=people,dc=netplus,dc=local
+uniqueMember: uid=wilai.t,ou=people,dc=netplus,dc=local
+
+dn: cn=unit,ou=groups,dc=netplus,dc=local
+objectClass: groupOfUniqueNames
+objectClass: top
+objectClass: extensibleObject
+cn: unit
+uniqueMember: uid=admin,ou=people,dc=netplus,dc=local
+
+dn: cn=pea,ou=groups,dc=netplus,dc=local
+objectClass: groupOfUniqueNames
+objectClass: top
+objectClass: extensibleObject
+cn: pea
+uniqueMember: uid=admin,ou=people,dc=netplus,dc=local
+uniqueMember: uid=pea,ou=people,dc=netplus,dc=local
+
+dn: uid=admin,ou=people,dc=netplus,dc=local
+objectClass: top
+objectClass: inetOrgPerson
+uid: admin
+cn: admin
+givenName: admin
+sn: NetPlus
+mail: admin@netplus.co.th
+userPassword: plus321
+
+dn: uid=netplus,ou=people,dc=netplus,dc=local
+objectClass: top
+objectClass: inetOrgPerson
+uid: netplus
+cn: netplus
+givenName: netplus
+sn: NetPlus
+mail: netplus@netplus.co.th
+userPassword: plus321
