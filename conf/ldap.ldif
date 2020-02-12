@@ -79,9 +79,11 @@ dn: uid=admin,ou=people,dc=netplus,dc=local
 objectClass: top
 objectClass: inetOrgPerson
 uid: admin
+sAMAccountName: admin
 cn: admin
 givenName: admin
 sn: NetPlus
+displayName: Admin NetPlus
 mail: admin@netplus.co.th
 userPassword: plus321
 
@@ -89,8 +91,34 @@ dn: uid=netplus,ou=people,dc=netplus,dc=local
 objectClass: top
 objectClass: inetOrgPerson
 uid: netplus
+sAMAccountName: netplus
 cn: netplus
 givenName: netplus
 sn: NetPlus
+displayName: NetPlus NetPlus
 mail: netplus@netplus.co.th
+userPassword: plus321
+
+dn: uid=wilai.t,ou=people,dc=netplus,dc=local
+objectClass: top
+objectClass: organizationalPerson
+uid: wilai.t
+sAMAccountName: wilai.t
+cn: wilai.t
+givenName: วิไล
+sn: เถื่อนทองแถว
+displayName: วิไล เถื่อนทองแถว
+mail: wilai.t@nbtc.go.th
+userPassword: plus321
+
+dn: uid=nopparat.n,ou=people,dc=netplus,dc=local
+objectClass: top
+objectClass: organizationalPerson
+uid: nopparat.n
+sAMAccountName: nopparat.n
+cn: nopparat.n
+givenName: นพรัตน์
+sn: นิลเปรม
+displayName: นพรัตน์ นิลเปรม
+mail: dearriedear@hotmail.com
 userPassword: plus321
